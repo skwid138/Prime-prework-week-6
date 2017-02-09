@@ -1,0 +1,7 @@
+/* CSS Stylesheet */
+body {
+  font-family: sans-serif;
+}
+header h1, h1 {
+  display: none;
+}

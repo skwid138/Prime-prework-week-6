@@ -1,0 +1,45 @@
+$(document).ready(function() {
+
+  // nav bar event listeners set up
+  $('.navDiv').mouseenter(mouseEnterButton);
+  $('.navDiv').mouseleave(mouseLeaveButton);
+
+  //TODO add your code below to attach event listeners to the buttons
+
+});
+
+// nav bar function to fade when mouse enters button
+function mouseEnterButton() {
+  $(this).fadeTo('fast', 0.5);
+  console.log('enter');
+}
+
+// nav bar function to fade when mouse enters button
+function mouseLeaveButton() {
+  console.log('leave');
+  $(this).fadeTo('fast', 1);
+}
+
+// hideCat is a function to hide the cat image when that button is clicked
+function hideCat() {
+  //TODO your function code here
+
+}
+
+// fadeCat is a function to fade cat in or out when that button is clicked
+function fadeCat() {
+  //TODO your function code here
+
+}
+
+// animateCat is a function to grow the cat's height and width by 10px when that button is clicked
+function animateCat() {
+  //TODO your function code here
+}
+
+// PRO MODE
+// resetCat is a function to reset the cat photo to it's original size
+// when that button is clicked.
+function resetCat() {
+
+}
