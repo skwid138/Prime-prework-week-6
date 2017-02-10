@@ -15,10 +15,10 @@ var onReady = function() {
   // T2
   // write your code for task 2 here.
 
-  // T3
+  // T2 Bonus (optional)
   // write your code for task 3 here.
 
-  // T3 Bonus (optional)
+  // T3
   // write your code for task 3 bonus here.
 
   // T4
