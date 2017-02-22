@@ -12,8 +12,8 @@ $(document).ready(function() {
 
 // nav bar function to fade when mouse enters button
 function mouseEnterButton() {
-  $(this).fadeTo('fast', 0.5);
   console.log('enter');
+  $(this).fadeTo('fast', 0.5);
 }
 
 // nav bar function to fade when mouse enters button
@@ -22,19 +22,19 @@ function mouseLeaveButton() {
   $(this).fadeTo('fast', 1);
 }
 
-// hideCat is a function to hide the cat image when that button is clicked
-function hideCat() {
-  //TODO your function code here
-  // hide catImg
-  // append '<p>hide toggle</p>' to 'clickList'
-}
-
 // fadeCat is a function to fade cat in or out when that button is clicked
 function fadeCat() {
   //TODO your function code here
   // toggle catImg fade
   // append '<p>fade toggle</p>' to 'clickList'
 
+}
+
+// hideCat is a function to hide and show the cat image when that button is clicked
+function hideCat() {
+  //TODO your function code here
+  // hide catImg
+  // append '<p>hide toggle</p>' to 'clickList'
 }
 
 // animateCat is a function to grow the cat's height and width by 10px when that button is clicked
