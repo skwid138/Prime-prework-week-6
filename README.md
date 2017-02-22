@@ -50,9 +50,9 @@ Now that you've got your basic app structure up and running, it's time to practi
 ## Pt.2: Event Handling, Animation, Hide/Show Elements
 
 ### Description
-Burrito cat needs a navigation bar to help it hide further. Using the existing html code in `index.html`, add the jQuery event handling code to help burrito cat fade in and out, hide and show itself and animate itself.
+Burrito cat needs a navigation bar to help it hide further. Using the existing html code in `index.html` and JavaScript code in `script.js`, add the jQuery event handling code to help burrito cat fade in and out, hide and show itself and animate itself.
 
-When a button is clicked, append to the div with id of "clickList" a p tag with the event. Ex: after clicking "Fade Me!" twice there should be 2 p tags in the "clickList" div that say "toggleFade".
+When a button is clicked, append to the div with id of `"clickList"` a p tag with the event. Ex: after clicking "Fade Me!" twice there should be 2 p tags in the "clickList" div that say "toggleFade".
 
 There are in-line comments in the `script.js` explaining what should happen.
 

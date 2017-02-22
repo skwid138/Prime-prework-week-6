@@ -5,12 +5,9 @@ $(document).ready(function() {
   $('.navDiv').mouseleave(mouseLeaveButton);
 
   //TODO add your code below to attach event listeners to the buttons
-  $( '#fadeDiv' ).on( 'click', function(){
-    fadeCat();
-  });
-  $( '#hideDiv' ).on( 'click', function(){
-    hideCat();
-  });
+  // We did the first one for you. You can use the `.click()` function or
+  // the .on('click') like we did below.
+  $( '#fadeDiv' ).on( 'click', fadeCat);
 });
 
 // nav bar function to fade when mouse enters button
@@ -47,7 +44,7 @@ function animateCat() {
   // append '<p>animate</p>' to 'clickList'
 }
 
-// PRO MODE
+// Hard Mode
 // resetCat is a function to reset the cat photo to it's original size
 // when that button is clicked.
 function resetCat() {
