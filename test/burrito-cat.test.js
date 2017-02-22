@@ -1,6 +1,6 @@
 describe('hideCat()', function() {
   beforeEach(function () {
-    fixture.setBase('5-2/src');
+    fixture.setBase('assignment/2_burrito-cat');
     fixture.load('index.html');
   });
 

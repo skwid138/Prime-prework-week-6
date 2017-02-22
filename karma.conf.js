@@ -17,6 +17,11 @@ module.exports = function(config) {
       'assignment/1_selectors/styles.css',
       'assignment/1_selectors/vendors/jquery.min.js',
       'assignment/1_selectors/script.js',
+
+      'assignment/2_burrito-cat/index.html',
+      'assignment/2_burrito-cat/styles.css',
+      'assignment/2_burrito-cat/vendors/jquery.min.js',
+      'assignment/2_burrito-cat/script.js',
       'test/**.js'
       // // '5-2/src/imgs/*.png', // TODO image failing to load in PhantomJS
     ],
@@ -29,7 +34,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'assignment/1_selectors/index.html': ['html2js'],
-      // '5-2/src/index.html': ['html2js']
+      'assignment/2_burrito-cat/index.html': ['html2js']
     },
 
     // test results reporter to use
