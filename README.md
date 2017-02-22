@@ -39,13 +39,13 @@ You've been given an HTML page called `index.html`. Examine this closely.
 
 Now that you've got your basic app structure up and running, it's time to practice using jQuery. Write code that performs the following DOM selection and manipulation:
 
-1. Select the element with id "step-one" and change its background color to yellow. HINT: look up .css() to access an element's css properties!
-2. Select the list with a class of "example-list" and fade it out over 1.5 seconds
-  - BONUS! Wait one second and then fade it back in! HINT: look up delay()!
-3. Select just the h1 inside the header element and make it appear with the show() method (all h1s are hidden by the stylesheet!)
-4. Select all of the odd-numbered list items and change their text color to blue HINT: look up .css() to access an element's css properties!
+1. Select just the h1 inside the header element and make it disappear with the `hide()` method. 
+2. Select the element with id `"step-two"` and change its background color to yellow. HINT: look up `.css()` to access an element's css properties!
+3. Select the list with a class of `"example-list"` and fade it out over 1.5 seconds
+  - BONUS! Wait one second and then fade it back in! HINT: look up `.delay()`!
+4. Select all of the odd-numbered list items and change their text color to blue HINT: look up `.css()` to access an element's css properties!
 5. Select the last list item on the page using a pseudo selector.
-6. Using DOM traversal, select the last list item on the page using any of the following: parent(), children(), last(). Change its text color to red.
+6. Using DOM traversal, select the last list item on the page using any of the following: `.parent()`, `.children()`, `.last()`. Change its text color to red.
 
 ## Pt.2: Event Handling, Animation, Hide/Show Elements
 
