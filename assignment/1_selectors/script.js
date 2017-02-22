@@ -1,5 +1,3 @@
-// 5-1 Challenge
-
 console.log('JS loaded');
 
 /*
@@ -10,23 +8,26 @@ var onReady = function() {
   console.log('DOM ready');
 
   // 1 - hide just the h1 inside header
-  // write your code for question 1 here.
+  $('header h1').hide();
+  // $('header h1').toggle(); // or with toggle
 
   // 2 - change the background color of 'step-two' to yellow
-  // write your code for question 2 here.
+  $('#step-two').css('background-color', 'yellow');
 
   // 3 - fadout example elements
   // 3 bonus - wait one second and fade back in
-  // write your code for question 3 here.
+  $('.example-list').fadeOut(1500).delay(1000).fadeIn(500);
 
   // 4 - select all odd list items and change to blue
-  // write your code for question 4 here.
+  $('li:odd').css('color', 'blue');
 
   // 5 - select the last list item with a pseudo selector
-  // write your code for question 5 here.
+  $('li:last').css('color', 'red');
 
   // 6 - select the last list item with traversal
-  // write your code for question 6 here.
+  $('li').last().css('color', 'red');
+  // $('main').children().last().children().last().css('color', 'red');
+  // $('#step-two').parent().css('color', 'red');
 };
 
 // When the DOM is loaded, our code in the onReady function will run.
