@@ -13,22 +13,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '5-1/src/index.html',
-      '5-1/src/vendors/jquery.min.js',
-      '5-1/src/styles.css',
-      '5-1/src/solution*.js',
-      //'5-1/src/script*.js', //student code will be here
-      '5-1/test/*.js',
-
-      // TODO need to get the ** working here so we dont have duplicate lines
-      '5-2/src/index.html',
-      '5-2/src/vendors/jquery.min.js',
-      '5-2/src/styles.css',
-      // '5-2/src/imgs/*.png', // TODO image failing to load in PhantomJS
-      '5-2/src/solution*.js',
-      //'5-1/src/script*.js', //student code will be here
-      '5-2/test/*.js',
-      // {pattern: 'tests/**/*.js', included: false}
+      'assignment/1_selectors/index.html',
+      'assignment/1_selectors/styles.css',
+      'assignment/1_selectors/vendors/jquery.min.js',
+      'assignment/1_selectors/script.js',
+      'test/**.js'
+      // // '5-2/src/imgs/*.png', // TODO image failing to load in PhantomJS
     ],
 
     // list of files to exclude
@@ -38,8 +28,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '5-1/src/index.html': ['html2js'],
-      '5-2/src/index.html': ['html2js']
+      'assignment/1_selectors/index.html': ['html2js'],
+      // '5-2/src/index.html': ['html2js']
     },
 
     // test results reporter to use
