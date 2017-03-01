@@ -6,7 +6,7 @@ This is where a code library like [jQuery](http://www.jquery.com) comes in! jQue
 
 Look at all the topics you covered below, impressive. I am sure by now you have seen how powerful jQuery is and are excited to get started trying it.
 
-## Topics Cover
+## Topics Covered
 - File Linking / Libraries
 - Document Ready
 - Targeting (Element, Class, ID)
