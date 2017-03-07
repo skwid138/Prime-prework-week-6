@@ -1,4 +1,4 @@
-# jQuery Memory Game Assignment
+# Memory Game
 
 Now that you're familiar with using jQuery to select elements and handle events, we can start to get some really cool functionality.
 
@@ -17,7 +17,7 @@ It may look something like this:
 ![example](memory-game-example.png)
 
 ### Getting Started
-Inside the `assignment` folder you will find another folder called `memory-game` that contains all the starter files for this assignment. You will find an `index.html` that contains four cards to start developing with. The `index.html` has linked the `style.css` and the `script.js`. Both of these files have some code to start with. You will need to edit `script.js` to get the game functionality working.
+Inside the *assignment* folder you will find another folder called *memory-game* that contains all the starter files for this assignment. You will find an *index.html* that contains four cards to start developing with. The *index.html* has linked the *style.css* and the *script.js*. Both of these files have some code to start with. You will need to edit *script.js* to get the game functionality working.
 
 ### Reveal All Button
 

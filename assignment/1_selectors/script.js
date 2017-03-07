@@ -2,31 +2,32 @@
 
 console.log('JS loaded');
 
-/*
-See the README.md file for instructions
-*/
-
 var onReady = function() {
   console.log('DOM ready');
 
-  // 1 - hide just the h1 inside header
-  // write your code for question 1 here.
+  // 1 - Select just the h1 inside the header element and
+  // make it disappear with the `hide()` method
 
-  // 2 - change the background color of 'step-two' to yellow
-  // write your code for question 2 here.
+  // 2 - Select the element with id "step-two" and
+  // change its background color to yellow.
+  // HINT: look up .css() to access an element's css properties
 
-  // 3 - fadout example elements
-  // 3 bonus - wait one second and fade back in
-  // write your code for question 3 here.
+  // 3 - Select the list with a class of "example-list" and
+  // fade it out over 1.5 seconds
+  // 3 bonus - wait 1 second and fade back in
+  // HINT: look up .delay()
+  // Write your code for question 3 here
 
-  // 4 - select all odd list items and change to blue
-  // write your code for question 4 here.
+  // 4 - Select all of the odd-numbered list items and
+  // change their text color to blue
+  // HINT: look up .css() to access an element's css properties
 
   // 5 - select the last list item with a pseudo selector
   // write your code for question 5 here.
 
-  // 6 - select the last list item with traversal
-  // write your code for question 6 here.
+  // 6 - Using DOM traversal, select the last list item on the page
+  // using any of the following: .parent(), .children(), .last().
+  // Change its text color to red.
 };
 
 // When the DOM is loaded, our code in the onReady function will run.
