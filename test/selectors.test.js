@@ -1,6 +1,9 @@
 describe('basemode 1_selectors assignment', function() {
-  beforeEach(function () {
+  before(function() {
     fixture.setBase('assignment/1_selectors');
+  });
+
+  beforeEach(function () {
     fixture.load('index.html');
   });
 
