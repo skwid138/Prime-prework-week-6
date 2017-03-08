@@ -22,6 +22,12 @@ module.exports = function(config) {
       'assignment/2_burrito-cat/styles.css',
       'assignment/2_burrito-cat/vendors/jquery.min.js',
       'assignment/2_burrito-cat/script.js',
+
+      'assignment/3_memory-game/index.html',
+      'assignment/3_memory-game/styles.css',
+      'assignment/3_memory-game/vendors/jquery.min.js',
+      'assignment/3_memory-game/script.js',
+
       'test/**.js'
       // // '5-2/src/imgs/*.png', // TODO image failing to load in PhantomJS
     ],
@@ -34,7 +40,8 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'assignment/1_selectors/index.html': ['html2js'],
-      'assignment/2_burrito-cat/index.html': ['html2js']
+      'assignment/2_burrito-cat/index.html': ['html2js'],
+      'assignment/3_memory-game/index.html': ['html2js']
     },
 
     // test results reporter to use
