@@ -1,14 +1,14 @@
 console.log('Test Sourced');
 
-var onReady = function() {
+var onReady2 = function() {
   console.log('memory game doc ready');
 
   $('#revealHide').on('click', revealHide);
   $('.cardDiv').click(singleClickFunc);
 };
 
-// on document ready run the onReady function
-$(document).ready(onReady);
+// on document ready run the onReady2 function
+$(document).ready(onReady2);
 
 // revealHide function hides and shows all cards
 function revealHide() {

@@ -30,7 +30,7 @@ describe('memory game test', function() {
   describe('singleClickFunc()', function() {
     it('should hide card image when that image\'s card is clicked', function() {
       //ensure document is ready before test runs
-      onReady();
+      onReady2();
 
       // get first card element and trigger click event on it
       $('.cardDiv').first().triggerHandler('click');
@@ -39,7 +39,7 @@ describe('memory game test', function() {
 
     it('should show card image when that image\'s card is clicked', function() {
       //ensure document is ready before test runs
-      onReady();
+      onReady2();
 
       //call revealHide to hide all cards and validate they are hidden
       revealHide();
