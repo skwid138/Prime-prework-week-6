@@ -5,7 +5,7 @@ See the README.md file for instructions
 */
 
 var onReady = function() {
-  console.log('DOM ready');
+  console.log('selectors doc ready');
 
   // 1 - hide just the h1 inside header
   $('header h1').hide();

@@ -1,52 +1,54 @@
-fixture.setBase('src');
-
-beforeEach(function () {
-  fixture.load('index.html');
-});
-
-afterEach(function () {
-});
-
-// -- describe statements --
-describe('revealHide()', function() {
-  it('should show and hide when revealHide is called', function() {
-    //revealHide has not been called
-    // validate that all elements with the cardImg class are visible
-    validateShown();
-
-    // revealHide function is called
-    revealHide();
-    // validate that all elements with the cardImg class are not visible
-    validateHidden();
-
-    //revealHide is called again
-    revealHide();
-    // validate that all elements with the cardImg class are visible
-    validateShown();
-  });
-});
-
-describe('singleClickFunc()', function() {
-  it('should hide card image when that image\'s card is clicked', function() {
-    //ensure document is ready before test runs
-    onReady();
-
-    // get first card element and trigger click event on it
-    $('.card').first().triggerHandler('click');
-    assert.equal($('.cardImg').first().is(':visible'), false, 'element should not be visible');
+describe('memory game test', function() {
+  beforeEach(function () {
+    fixture.setBase('assignment/3_memory-game');
+    fixture.load('index.html');
   });
 
-  it('should show card image when that image\'s card is clicked', function() {
-    //ensure document is ready before test runs
-    onReady();
+  afterEach(function () {
+    fixture.cleanup();
+  });
 
-    //call revealHide to hide all cards and validate they are hidden
-    revealHide();
-    validateHidden();
+  describe('revealHide()', function() {
 
-    // get first card element and trigger click event on it
-    $('.card').first().triggerHandler('click');
-    assert.equal($('.cardImg').first().is(':visible'), true, 'element should not be visible');
+    it('should show and hide when revealHide is called', function() {
+      //revealHide has not been called
+      // validate that all elements with the cardImg class are visible
+      validateShown();
+
+      // revealHide function is called
+      revealHide();
+      // validate that all elements with the cardImg class are not visible
+      validateHidden();
+
+      //revealHide is called again
+      revealHide();
+      // validate that all elements with the cardImg class are visible
+      validateShown();
+    });
+  });
+
+  describe('singleClickFunc()', function() {
+    it('should hide card image when that image\'s card is clicked', function() {
+      //ensure document is ready before test runs
+      onReady();
+
+      // get first card element and trigger click event on it
+      $('.cardDiv').first().triggerHandler('click');
+      assert.equal($('.cardImg').first().is(':visible'), false, 'element should not be visible');
+    });
+
+    it('should show card image when that image\'s card is clicked', function() {
+      //ensure document is ready before test runs
+      onReady();
+
+      //call revealHide to hide all cards and validate they are hidden
+      revealHide();
+      validateHidden();
+
+      // get first card element and trigger click event on it
+      $('.cardDiv').first().triggerHandler('click');
+      assert.equal($('.cardImg').first().is(':visible'), true, 'element should be visible');
+    });
   });
 });
 
