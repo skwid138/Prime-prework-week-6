@@ -1,3 +1,11 @@
+/*
+  Note on week 6 there were some test issues where two different parts of the
+  assignment called their own onReady function. The tests were confusing which
+  onReady goes with which test and causing tests to fail unexpectedly. To fix
+  this we named one onReady2. This isn't a great solution, but the other option
+  would be to follow the module pattern, which is not a pattern we teach and
+  would be extra confusing for students.
+*/
 describe('memory game test', function() {
   before(function() {
     fixture.setBase('assignment/3_memory-game');
