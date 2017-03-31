@@ -34,18 +34,28 @@ describe('basemode 1_selectors assignment', function() {
   // 3 - fadout example elements
   // 3 bonus - wait one second and fade back in
   // $('.example-list').fadeOut(1500).delay(1000).fadeIn(500);
-  // it('should fadeOut the example-list', function() {
-  //   // sinon.stub(jQuery.prototype, "fadeOut");
-  //   var spy = sinon.spy($.prototype, "fadeOut");
-  //
-  //
-  //
-  //   // onReady();
-  //   spy();
-  //   spy.should.have.been.called();
-  //   spy.reset();
-  //   // assert.equal($('.example-list').is(':visible'), false, 'not visible breifly').to;
-  // });
+  
+
+  // 4 - select all odd list items and change to blue
+  // $('li:odd').css('color', 'blue');
+  it("should change color of odd li's to blue", function() {
+    onReady();
+    var oddListItems = $('li:odd').css('color') == 'rgb(0, 0, 255)';
+    assert.equal(oddListItems, true, "text color of odd li's should be blue");
+  });
+
+  // 5 - select the last list item with a pseudo selector
+  // $('li:last').css('color', 'red');
+
+  // 6 - select the last list item with traversal
+  // $('li').last().css('color', 'red');
+  it('should change color of last li to red', function() {
+    onReady();
+    var lastLi = $('li:last').css('color') == 'rgb(255, 0, 0)';
+    assert.equal(lastLi, true, 'text color should be red');
+  });
+
+
 
 
 
