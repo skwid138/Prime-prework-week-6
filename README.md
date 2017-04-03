@@ -52,5 +52,18 @@ Add a reset button to reset the changes made by the animation.
 ### 3 - Memory Game (Pro Mode)
 Inside the *assignment* folder there will be a *memory-game* folder with all the code you need to get started. The problem is described in this markdown file: [memory-game.md](assignment/memory-game/memory-game.md)
 
+#### Modes
+
+Above, we introduced the concept of levels of difficulty. "Mode" is how we will typically refer to each level. Below is a brief explanation of
+
+* what to expect when attempting each mode
+* if they are required or not
+
+Mode | Description
+---  | ---
+Base | required 
+Hard | optional, stretches your understanding
+Pro  | optional, stretches your understanding and may require additional research
+
 ### Assignment Submission
 Check in your repo, then turn in your work via the Prime Academy Assignment Application at http://primeacademy.io, as usual and don't hesitate to hit up the Slack channel as needed!
