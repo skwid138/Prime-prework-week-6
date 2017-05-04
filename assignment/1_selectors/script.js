@@ -14,9 +14,8 @@ var onReady = function() {
   // 2 - change the background color of 'step-two' to yellow
   $('#step-two').css('background-color', 'yellow');
 
-  // 3 - fadout example elements
-  // 3 bonus - wait one second and fade back in
-  $('.example-list').fadeOut(1500).delay(1000).fadeIn(500);
+  // 3 - fade example-list elements to an opacity of 0.4
+  $('.example-list').fadeTo('fast', 0.4);
 
   // 4 - select all odd list items and change to blue
   $('li:odd').css('color', 'blue');

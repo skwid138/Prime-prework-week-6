@@ -1,10 +1,12 @@
-describe('basemode 1_selectors assignment', function() {
+describe('basemode 1_selectors', function() {
+
   before(function() {
     fixture.setBase('assignment/1_selectors');
   });
 
   beforeEach(function () {
     fixture.load('index.html');
+    onReady();
   });
 
   afterEach(function () {
@@ -12,34 +14,25 @@ describe('basemode 1_selectors assignment', function() {
   });
 
   // 1
-  it('should not show header h1', function() {
+  it('hides the h1 element inside of the header element', function() {
     // make sure DOM is loaded
-    onReady();
     assert.equal($('header h1').is(':visible'), false, 'header h1 element should not be visible');
   });
 
   // 1
-  it('should keep other h1s visable', function() {
-    onReady();
-    assert.equal($('main h1').is(':visible'), true, 'other headers should be visable');
+  it('keeps all other h1 elements visible', function() {
+    assert.equal($('main h1').is(':visible'), true, 'other h1 elements should be visible');
   });
 
   // 2
-  it('should change background-color of span with id step-two to yellow', function() {
-    onReady();
+  it('changes background color of the span with an id of step-two to yellow', function() {
     var spanBg = $('#step-two').css('background-color') == 'rgb(255, 255, 0)';
-    assert.equal(spanBg, true, 'background-color should be yellow');
+    assert.equal(spanBg, true, 'background color should be yellow');
   });
-
-  // 3 - fadout example elements
-  // 3 bonus - wait one second and fade back in
-  // $('.example-list').fadeOut(1500).delay(1000).fadeIn(500);
-  
 
   // 4 - select all odd list items and change to blue
   // $('li:odd').css('color', 'blue');
-  it("should change color of odd li's to blue", function() {
-    onReady();
+  it('changes color of odd li elements to blue', function() {
     var oddListItems = $('li:odd').css('color') == 'rgb(0, 0, 255)';
     assert.equal(oddListItems, true, "text color of odd li's should be blue");
   });
@@ -49,14 +42,9 @@ describe('basemode 1_selectors assignment', function() {
 
   // 6 - select the last list item with traversal
   // $('li').last().css('color', 'red');
-  it('should change color of last li to red', function() {
-    onReady();
+  it('changes color of last li element to red', function() {
     var lastLi = $('li:last').css('color') == 'rgb(255, 0, 0)';
     assert.equal(lastLi, true, 'text color should be red');
   });
-
-
-
-
 
 });

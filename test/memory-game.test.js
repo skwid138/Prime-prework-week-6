@@ -6,7 +6,7 @@
   would be to follow the module pattern, which is not a pattern we teach and
   would be extra confusing for students.
 */
-describe('memory game test', function() {
+describe('3_memory-game', function() {
   before(function() {
     fixture.setBase('assignment/3_memory-game');
   });
@@ -21,7 +21,7 @@ describe('memory game test', function() {
 
   describe('revealHide()', function() {
 
-    it('should show and hide when revealHide is called', function() {
+    it('shows and hides when revealHide is called', function() {
       //revealHide has not been called
       // validate that all elements with the cardImg class are visible
       validateShown();
@@ -39,7 +39,7 @@ describe('memory game test', function() {
   });
 
   describe('singleClickFunc()', function() {
-    it('should hide card image when that image\'s card is clicked', function() {
+    it('hides card image when that image\'s card is clicked', function() {
       //ensure document is ready before test runs
       onReady2();
 
@@ -48,7 +48,7 @@ describe('memory game test', function() {
       assert.equal($('.cardImg').first().is(':visible'), false, 'element should not be visible');
     });
 
-    it('should show card image when that image\'s card is clicked', function() {
+    it('shows card image when that image\'s card is clicked', function() {
       //ensure document is ready before test runs
       onReady2();
 
