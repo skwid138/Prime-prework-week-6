@@ -7,7 +7,7 @@ $(document).ready(function() {
   //TODO add your code below to attach event listeners to the buttons
   // We did the first one for you. You can use the `.click()` function or
   // the .on('click') like we did below.
-  $( '#fadeDiv' ).on( 'click', fadeCat);
+  $('#fadeDiv').on('click', fadeCat);
 });
 
 // nav bar function to fade when mouse enters button
@@ -45,7 +45,7 @@ function animateCat() {
 }
 
 // Hard Mode
-// resetCat is a function to reset the cat photo to it's original size
+// resetCat is a function to reset the cat photo to its original size
 // when that button is clicked.
 function resetCat() {
   // reset catImg

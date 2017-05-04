@@ -12,11 +12,7 @@ var onReady = function() {
   // change its background color to yellow.
   // HINT: look up .css() to access an element's css properties
 
-  // 3 - Select the list with a class of "example-list" and
-  // fade it out over 1.5 seconds
-  // 3 bonus - wait 1 second and fade back in
-  // HINT: look up .delay()
-  // Write your code for question 3 here
+  // 3 - fade example-list elements to an opacity of 0.4
 
   // 4 - Select all of the odd-numbered list items and
   // change their text color to blue
