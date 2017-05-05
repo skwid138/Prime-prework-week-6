@@ -26,12 +26,12 @@ function mouseLeaveButton() {
 }
 
 // fadeCat is a function to fade cat in or out when that button is clicked
-function fadeCat() {
+function fadeCat(e, complete) {
   // toggle catImg fade
   if($('#catImg').is(':visible')){
-    $('#catImg').fadeOut('slow');
+    $('#catImg').fadeOut('slow', complete);
   }else{
-    $('#catImg').fadeIn('slow');
+    $('#catImg').fadeIn('slow', complete);
   }
   // append '<p>fade toggle</p>' to 'clickList'
   $('#clickList').append('<p>fade toggle</p>');
@@ -51,11 +51,11 @@ function hideCat() {
 }
 
 // animateCat is a function to grow the cat's height and width by 10px when that button is clicked
-function animateCat() {
+function animateCat(e, complete) {
   // animate catImg
   $('#catImg').animate({
     width: '+=10px'
-  }, 'slow');
+  }, 'slow', 'swing', complete);
   // append '<p>animate</p>' to 'clickList'
   $('#clickList').append('<p>animate</p>');
 }

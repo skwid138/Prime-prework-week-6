@@ -4,7 +4,7 @@ console.log('JS loaded');
 See the README.md file for instructions
 */
 
-var onReady = function() {
+var onReady = function(e, complete) {
   console.log('selectors doc ready');
 
   // 1 - hide just the h1 inside header
@@ -15,7 +15,7 @@ var onReady = function() {
   $('#step-two').css('background-color', 'yellow');
 
   // 3 - fade example-list elements to an opacity of 0.4
-  $('.example-list').fadeTo('fast', 0.4);
+  $('.example-list').fadeTo('fast', 0.4, complete);
 
   // 4 - select all odd list items and change to blue
   $('li:odd').css('color', 'blue');
