@@ -2,7 +2,7 @@
 
 console.log('JS loaded');
 
-var onReady = function() {
+var onReady = function(e, complete) { // ignore e, use complete when specified below
   console.log('selectors doc ready');
 
   // 1 - Select just the h1 inside the header element and
@@ -13,6 +13,7 @@ var onReady = function() {
   // HINT: look up .css() to access an element's css properties
 
   // 3 - fade example-list elements to an opacity of 0.4
+  // use complete as the last argument to the jQuery fade function
 
   // 4 - Select all of the odd-numbered list items and
   // change their text color to blue

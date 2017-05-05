@@ -23,7 +23,7 @@ function mouseLeaveButton() {
 }
 
 // fadeCat is a function to fade cat in or out when that button is clicked
-function fadeCat() {
+function fadeCat(e, complete) { // ignore e, use complete as the last argument to any jQuery fade functions
   //TODO your function code here
   // toggle catImg fade
   // append '<p>fade toggle</p>' to 'clickList'
@@ -38,7 +38,7 @@ function hideCat() {
 }
 
 // animateCat is a function to grow the cat's height and width by 10px when that button is clicked
-function animateCat() {
+function animateCat(e, complete) { // ignore e, use complete as the last argument to the jQuery animate function
   //TODO your function code here
   // animate catImg
   // append '<p>animate</p>' to 'clickList'
