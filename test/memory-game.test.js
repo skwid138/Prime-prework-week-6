@@ -6,7 +6,7 @@
   would be to follow the module pattern, which is not a pattern we teach and
   would be extra confusing for students.
 */
-describe('3_memory-game', function() {
+describe('promode 3_memory-game', function() {
   before(function() {
     fixture.setBase('assignment/3_memory-game');
   });
