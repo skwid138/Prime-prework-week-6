@@ -19,7 +19,7 @@ function mouseEnterButton() {
   $(this).fadeTo('fast', 0.5);
 }
 
-// nav bar function to fade when mouse enters button
+// nav bar function to fade when mouse leaves button
 function mouseLeaveButton() {
   console.log('leave');
   $(this).fadeTo('fast', 1);
