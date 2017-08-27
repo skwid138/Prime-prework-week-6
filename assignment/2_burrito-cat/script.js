@@ -8,6 +8,9 @@ $(document).ready(function() {
   // We did the first one for you. You can use the `.click()` function or
   // the .on('click') like we did below.
   $('#fadeDiv').on('click', fadeCat);
+  $('#hideDiv').click(hideCat);
+  $('#animateDiv').click(animateCat);
+  $('#resetDiv').click(resetCat);
 });
 
 // nav bar function to fade when mouse enters button
@@ -26,22 +29,27 @@ function mouseLeaveButton() {
 function fadeCat(e, complete) { // ignore e, use complete as the last argument to any jQuery fade functions
   //TODO your function code here
   // toggle catImg fade
+  $('#catImg').fadeToggle(complete);
   // append '<p>fade toggle</p>' to 'clickList'
-
+  $('#clickList').append('<p>fade toggle</p>');
 }
 
 // hideCat is a function to hide and show the cat image when that button is clicked
 function hideCat() {
   //TODO your function code here
   // hide catImg
+  $('#catImg').toggle();
   // append '<p>hide toggle</p>' to 'clickList'
+  $('#clickList').append('<p>hide toggle</p>');
 }
 
 // animateCat is a function to grow the cat's height and width by 10px when that button is clicked
 function animateCat(e, complete) { // ignore e, use complete as the last argument to the jQuery animate function
   //TODO your function code here
   // animate catImg
+  $('#catImg').animate({height: "10px"}, {width: "10px"}, complete);
   // append '<p>animate</p>' to 'clickList'
+  $('#clickList').append('<p>animate</p>');
 }
 
 // Hard Mode
@@ -49,5 +57,7 @@ function animateCat(e, complete) { // ignore e, use complete as the last argumen
 // when that button is clicked.
 function resetCat() {
   // reset catImg
+  $('#catImg').removeAttr('style');
   // append '<p>reset</p>' to 'clickList'
+  $('#clickList').append('<p>reset</p>');
 }
