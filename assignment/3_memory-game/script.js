@@ -7,7 +7,7 @@ var onReady2 = function() {
   $('.cardDiv').click(singleClickFunc);
   $('#revealHide').click(revealHide);
   // $('.cardImg').css('visibility', 'hidden');
-  $('.cardImg').hide();
+  // $('.cardImg').hide();
 };
 
 // on document ready run the onReady2 function
