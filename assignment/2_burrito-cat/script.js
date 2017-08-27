@@ -47,7 +47,7 @@ function hideCat() {
 function animateCat(e, complete) { // ignore e, use complete as the last argument to the jQuery animate function
   //TODO your function code here
   // animate catImg
-  $('#catImg').animate({height: "10px"}, {width: "10px"}, complete);
+  $('#catImg').animate({height: "+=10px", width: "+=10px"}, complete);
   // append '<p>animate</p>' to 'clickList'
   $('#clickList').append('<p>animate</p>');
 }
