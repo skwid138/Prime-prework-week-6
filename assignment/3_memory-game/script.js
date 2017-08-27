@@ -18,10 +18,10 @@ function revealHide() {
 
   //TODO add your code here to get the desired functionality
   console.log('func: revealHide');
-  // $('.cardImg').toggle();
-  if( $('img.cardImg').children().is(":visible") ) {
-    $('img.cardImg').children().hide();
-  } else ( $('.cardImg').toggle() );
+  $('.cardImg').toggle();
+  // if( $('img.cardImg').children().is(":visible") ) {
+  //   $('img.cardImg').children().hide();
+  // } else ( $('.cardImg').toggle() );
 }
 
 // singleClickFunc function hides and shows an indivdual card
